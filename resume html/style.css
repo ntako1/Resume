@@ -210,7 +210,6 @@ nav a:nth-child(3):hover~span {
   }
   
   .button button {
-    background-color: rgba(0, 0, 0, 0.5);
           background-color: greenyellow;
 
     color: white;
