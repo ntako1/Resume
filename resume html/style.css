@@ -1,0 +1,284 @@
+/* Default styling */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    background: rgb(0, 0, 0);
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #222;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: larger;
+
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-family: fantasy;
+    font-weight: 250;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 5%;
+    z-index: 1;
+    transition: color 0.9s;
+    /* Added transition for smooth color change */
+}
+
+nav span {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: linear-gradient(45deg, #f333f3, aqua);
+    border-radius: 9px;
+    transition: left 0.3s, width 0.3s;
+    /* Added transition for smooth sliding effect */
+}
+
+nav a:hover {
+    color: rgb(161, 212, 238);
+    /* Change text color on hover */
+}
+
+nav a:nth-child(1):hover~span {
+    left: 0;
+    width: 38.9%;
+}
+
+nav a:nth-child(2):hover~span {
+    left: 39.5%;
+    width: 22.33%;
+}
+
+nav a:nth-child(3):hover~span {
+    left: 63%;
+    width: 37%;
+}
+
+/* nav .active {
+    color: rgb(80, 128, 152); /* Keep the active menu item color */
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+.photo {
+    margin-top: 12px;
+    width: 23%;
+    max-width: 200px;
+}
+
+.info {
+    color: #fff;
+    text-align: center;
+    font-size: larger;
+}
+
+.info img {
+    margin-bottom: -2.6%;
+    width: 7%;
+}
+
+.university-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.university-info img {
+    width: 7%;
+    margin-left: 10px;
+}
+
+.Certification {
+    color: rgb(80, 128, 152);
+}
+
+.footer {
+    color: #8c0f0f;
+    background-color: #131212d4;
+    padding: 10px;
+    width: 100%;
+}
+.footer_contact {
+    color: #8c0f0f;
+    background-color: #131212d4;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.footer-content {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 0.92em;
+}
+
+.footer-content a {
+    color: aqua;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.Social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    color: aquamarine;
+    justify-content: space-around;
+
+}
+
+.Social h3 {
+    color: #fff;
+}
+
+.Social a {
+    display: flex;
+    align-items: center;
+    margin: 9%;
+}
+
+.Social img {
+    width: 50px;
+    margin-left: 0.7em;
+    /* Adjust the width of the social icons */
+    margin-right: 10px;
+    /* Add some space between the icon and the link text */
+}
+
+.mySlides {
+    display: none;
+    max-width: 100%;
+    height: auto;
+}
+
+.button {
+    position: relative;
+}
+
+.w3-button {
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.w3-button:hover {
+    background-color: rgba(23, 73, 104, 0.8);
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    transform: translateY(-50%);
+    bottom:40vh;
+  }
+  
+  .button button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .text{
+    color:#fff;
+    
+  }
+
+  .mySlides img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+  
+  .slideshow-container h3{
+    color: greenyellow;
+
+  }
+
+  .slideshow-container img.ntk{
+width: 42%;
+  }
+
+ /* CSS */
+.button-36 {
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    height: 4rem;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 1.8%;
+  }
+  
+  .button-36:hover {
+    box-shadow: rgba(186, 96, 159, 0.5) 0 1px 30px;
+    transition-duration: 0.2s;
+  }
+  
+  @media (min-width: 768px) {
+    .button-36 {
+      padding: 0 2.6rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .button {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+
+  

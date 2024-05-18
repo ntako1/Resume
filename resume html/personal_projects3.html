@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <a href="resume.html">Who Am I</a>
+            <a href="personal_projects.html">Personal Projects</a>
+            <a href="contact.html">Contact Me</a>
+            |<span></span>
+        </nav>
+
+        <div class="slideshow-container">
+            <h3>Project 1.1</h3>
+
+
+            <div class="mySlides fade">
+                <img src="assets/personal_projects_photos_NTK/Arduin_system.png" class="ntk">
+                <div class="text">
+                    <p>Presenting Hardware of an Arduino System that I made for my diploma with title "Automation and
+                        IoT System
+                        Design and Implementation for Primary Production applications"
+                        <br>This project was awarder from a three-member committee (PROFESSORS of the University of
+                        Thessaly)
+                        with 10/10 (Excellent).<br>
+                        This collects data (Humidity, Temperature, Air Quallity, Brightness levels , Water level,Soil
+                        Moisture Level) and upload them to a database via a USB Cable .<br>
+                        
+                        <br>
+                        (Navigate with  left & right buttons )
+                        <br>
+                        You can find the source code here :<a href="https://github.com/ntako1/Graduation-project"
+                            target="_blank">GitHub Source Code (Graduation-project)</a>
+                    </p>
+                </div>
+            </div>
+
+            
+            <div class="mySlides fade">
+                <img src="assets/personal_projects_photos_NTK/Hardware.png" class="ntk">
+                <div class="text">
+                    <p>Hardware that was used
+                    </p>
+                </div>
+            </div>
+
+
+
+            <div class="button style">
+                <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+        </div>
+    
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusDivs(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex - 1].style.display = "block";
+            }
+        </script>
+</body>
+
+</html>

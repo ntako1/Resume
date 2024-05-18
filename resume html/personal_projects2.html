@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <a href="resume.html">Who Am I</a>
+            <a href="personal_projects.html">Personal Projects</a>
+            <a href="contact.html">Contact Me</a>
+            |<span></span>
+        </nav>
+
+        <div class="slideshow-container">
+            <h3>Project 1.1</h3>
+
+
+            <div class="mySlides fade">
+                <img src="assets/personal_projects_photos_NTK/Logo.png" class="ntk">
+                <div class="text">
+                    <p>Presenting a Software that I made for my diploma with title "Automation and IoT System
+                        Design and Implementation for Primary Production applications"
+                        <br>This project was awarder from a three-member committee (PROFESSORS of the University of Thessaly)
+                        with 10/10 (Excellent).<br>
+                        This is an app writen on React Native , so it can run on a variety of devices (IOS , WINDOWS ,ANDROID).
+
+                        <br>
+                        (Navigate with left & right buttons )
+                        <br>
+                        You can find the source code here :<a href="https://github.com/ntako1/Graduation-project"
+                            target="_blank">GitHub Source Code (Graduation-project)</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets/personal_projects_photos_NTK/NTK_login.png">
+                <div class="text">
+                    <p>The completed Log In / Register section for an app
+                        with the use of AWS with 100% safety for the user . Also the verify e-mail section is there for
+                        the user and for sure
+                        the 'Forget Password ' is there too!. All these are designed by me and connected with the
+                        backend
+                        of the AWS( Cognito , I AM ) for easy managment from the admin.
+                        You can find the source code here :<a href="https://github.com/ntako1/Graduation-project"
+                            target="_blank">GitHub Source Code (Graduation-project)</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets/personal_projects_photos_NTK/NTK.png">
+                <div class="text">
+                    <p>The "Home" screen is there to display all the data that are collected from the arduino
+                        System
+                        (Project 1.2). There are some nice effects about the Humidity and Temperature changes and also
+                        some
+                        advises for the user about his plants.
+                        Secondly ,you can see the "Weather" screen that the user can check the weather for all places on
+                        earth .The
+                        special thing about that is that is working with coordinates (latitude and longitude) so you can
+                        see
+                        the weather
+                        on the exact point of earth you want (cooperation with OpenWeather & Google Geolocation API'S
+                        ).On
+                        the third photo you can see all the data that are taken from Arduino System (Project 1.2)
+                        and on the last photo you can just read some infomation about some crops .
+                        You can find the source code here :<a href="https://github.com/ntako1/Graduation-project"
+                            target="_blank">GitHub Source Code (Graduation-project)</a> </p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets/personal_projects_photos_NTK/NTK_settings_menu.png">
+                <div class="text">
+                    <p>The second side menu [gesture actvated (slide right)] where there the user can find an easy use
+                        notepad ("To Do List")
+                        .After that there are some "User Settings" as "Contact Us" and "Change Username & Password"
+                        <a href="https://github.com/ntako1/Graduation-project" target="_blank">GitHub Source Code
+                            (Graduation-project)</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets/personal_projects_photos_NTK/NTK_notifications.png">
+                <div class="text">
+                    <p>Here you can see that through the FireBase Notification Center the admin can send messages
+                        & notifications
+                        to users . Also that was connected and with some scripts so the user could take some
+                        automated notifications that was coming
+                        from the Arduino System (Project 1.2) .For example in case of a fire , a Notification with a
+                        strange sound
+                        you come over to the user .
+                        <a href="https://github.com/ntako1/Graduation-project" target="_blank">GitHub Source Code
+                            (Graduation-project)</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets/personal_projects_photos_NTK/NTK_data-flow.png">
+                <div class="text">
+                    <p>And lastly is shown the NTK Data & Infromation Flow , how actually the app is running
+                        and where is going the data every time .
+                        <br> <br>
+
+                        As you can imagine , everything was made by Me , and this Project took me 11months to complete
+                        .
+                        <br>
+                        <a href="https://github.com/ntako1/Graduation-project" target="_blank">GitHub Source Code
+                            (Graduation-project)</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="button style">
+            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusDivs(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
